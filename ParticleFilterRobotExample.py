@@ -6,9 +6,9 @@ from RoboSim import *
 import random
 import matplotlib.pyplot as plt
 
-numberOfParticles = 25
+numberOfParticles = 26
 numberParticlesToResample = 8
-additivCovarianceMatrix = np.array([[10,0],[0,10]])
+additivCovarianceMatrix = np.array([[150,0],[0,150]])
 
 class Particle(Robot):
     def __init__(self, x=world.centerX(), y=world.centerY(),angle=0): 
