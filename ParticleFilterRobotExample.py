@@ -95,7 +95,7 @@ class ParticleFilter():
     def draw(self, figure):    
         for p in self.particles:
             p.draw(figure)
-        figure.gca().plot(self.mu[0],self.mu[1],'go') #draw the robot
+        figure.gca().plot(self.mu[0],self.mu[1],'go') #draw the particle filters robot
         pass
 
     def genNewParticles(self):
