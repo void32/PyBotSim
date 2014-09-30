@@ -23,9 +23,9 @@ stepSize = 0.25
 totalNumberOfTicks = 4000
 
 class World:
-    def __init__(self, pictureForBitmap='world.png'):
+    def __init__(self, pictureForBitmap='maze.png'):
         print "create world"
-        self.image = np.array(Image.open('world.png').convert('L'))
+        self.image = np.array(Image.open(pictureForBitmap).convert('L'))
 
     def draw(self,figure):
         figure.gca().imshow(self.image, cmap = cm.Greys_r)
